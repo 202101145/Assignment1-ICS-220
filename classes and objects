@@ -1,0 +1,8 @@
+classes can be:
+- Customer--> attributes(firstNmae, lastName, phoneNumber)
+- Service
+- vehicle -->attributes( id, type, color)
+- Price
+
+
+
