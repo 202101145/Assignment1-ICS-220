@@ -1,0 +1,35 @@
+class Customer:
+    def __init__(self,firstName,lastName,phoneNumber):
+        self.firstName=firstName
+        self.lastName=lastName
+        self.phoneNumber=phoneNumber
+    def setFirstName(self,firstName):
+        self.firstName = firstName
+    def getFirstName(self):
+        return self.firstName
+    def setLastName(self,lastName):
+        self.lastName=lastName
+    def getLastName(self):
+        return self.lastName
+    def setPhoneNumber(self,phoneNumber):
+      self.phoneNumber= phoneNumber
+    def getPhoneNumber(self):
+      return self.phoneNumber
+      
+class Vehicle:
+  def __init__(self,type,color,id):
+        self.type=type
+        self.color=color
+        self.id=id
+    def setType(self,type):
+        self.type = type
+    def getType(self):
+        return self.type
+    def setColor(self,color):
+        self.color=color
+    def getColor(self):
+        return self.color
+    def setId(self,id):
+      self.id= id
+    def getId(self):
+      return self.id
