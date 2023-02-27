@@ -1,0 +1,37 @@
+Use Case:
+Creating a Bill
+Trigger:
+The car garage wants to create a billing software management 
+Preconditions:
+
+
+Main scenarios:
+
+
+1-
+The customer specifies his personal details.
+2-
+The receptionist enters the details into the system.
+3-
+The customer specifies the services he wants.
+4-
+The mechanic start doing the services. 
+5-
+The receptionist enter the services into the system
+6-
+The system displays the amount of each service.
+7-
+The system includes taxes and discounts.
+8- 
+The system creates the bill with all the information.
+9-
+The receptionist will give the bill to the customer.
+Exceptions:
+
+
+3a
+1-The services are not available.
+2-The customer chooses a different service  
+6a
+1-The customer might not have a discount.
+
