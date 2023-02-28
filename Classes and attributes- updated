@@ -1,0 +1,9 @@
+Classes:
+
+Customer: fn, ln, cell, gender, date of birth  
+
+Service: service name, price, mechanic name, date 
+
+Vehicle: type, color, ID, year of vehicle, make
+
+Price : taxes, total, discount, final amount, service price
