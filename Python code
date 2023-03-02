@@ -1,0 +1,185 @@
+from enum import Enum
+
+class Make(Enum):
+    Toyota=1
+    VolksWagen=2
+    Nissan=3
+    
+class Model(Enum):
+    Yaris=1
+    Altima=2
+    Pasat=3
+    
+class Color(Enum):
+    White=1
+    Silver=2
+    Black=3
+class Vehicle:
+    def __init__(self, make, model, yearOfVehicle, color, id):
+        self.__make = make
+        self.__model = model
+        self.__yearOfVehicle = yearOfVehicle
+        self.__color = color
+        self.__id = id
+    def setMake(self, make):
+        self.__make = make
+
+    def getMake(self):
+        return self.__make
+
+    def setModel(self, model):
+        self.__model = model
+
+    def getModel(self):
+        return self.__model
+
+    def setYearOfVehicle(self, yearOfVehicle):
+        self.__yearOfVehicle = yearOfVehicle
+
+    def getYearOfVehicle(self):
+        return self.__yearOfVehicle
+
+    def setColor(self, color):
+        self.__color = color
+
+    def getColor(self):
+        return self.__color
+
+    def setID(self, id):
+        self.__id = id
+
+    def getID(self):
+        return self.__id
+    def displayInfo(self):
+        print('Make =',self.__make.name,', Model=',self.__model.name,', yearOfVehicle=',self.__yearOfVehicle,', Color=', self.__color.name,', ID=',self.__id)
+
+class Car(Vehicle):
+    def __init__(self, make, model, yearOfVehicle, color, id, numberOfDoors):
+        Vehicle.__init__(self, make, model, yearOfVehicle, color, id)
+        self.__numberOfDoors = numberOfDoors
+
+    def displayInfo(self):
+      Vehicle.displayInfo(self)
+      print('numberOfDoors=', self.__numberOfDoors) 
+CAR=Car(Make.Nissan,Model.Altima, 2014, Color.Silver, "AD-89034", 4)
+CAR.displayInfo()   
+
+
+class Price:
+    def __init__(self, servicePrice, total, taxes, discount, finalAmount):
+        self.__servicePrice = servicePrice
+        self.__total = total
+        self.__taxes = taxes
+        self.__discount = discount
+        self.__finalAmount = finalAmount
+    
+    def setServicePrice(self, servicePrice):
+        self.__servicePrice = servicePrice
+
+    def getServicePrice(self):
+        return self.servicePrice
+
+    def setTotal(self, total):
+        self.__total = total
+
+    def getTotal(self):
+        return self.__total
+
+    def setTaxes(self, taxes):
+        self.__taxes = taxes
+    
+    def getTaxes(self):
+        return self.__taxes
+
+    def setDiscount(self, discount):
+        self.__discount = discount
+ 
+    def getDiscount(self):
+        return self.__ddiscount
+
+    def setFinalAmount(self, finalAmount):
+        self.__finalAmount = finalAmount
+        
+    def getFinalAmount(self):
+        return self.__finalAmount
+        
+        
+ class Service:
+    def __init__(self, serviceName, servicePrice, mechanicName, dateOfService, numberOfServices):
+        self.__serviceName = serviceName
+        self.__servicePrice = servicePrice
+        self.__mechanicName = mechanicName
+        self.__dateOfService = dateOfService
+        self.__numberOfServices = numberOfServices
+    
+    def setServiceName(self, serviceName):
+        self.__serviceName = serviceName
+
+    def getServiceName(self):
+        return self.__serviceName
+
+    def setServicePrice(self, servicePrice):
+        self.__servicePrice = servicePrice
+
+    def getServicePrice(self):
+        return self.__servicePrice
+
+    def setMechanicName(self, mechanicName):
+        self.__mechanicName = mechanicName
+    
+    def getMechanicName(self):
+        return self.__mechanicName
+
+    def setDateOfService(self, dateOfService):
+        self.__dateOfService = dateOfService
+ 
+    def getDateOfService(self):
+        return self.__dateOfService
+
+    def setNumberOfServices(self, numberOfServices):
+        self.__numberOfServices = numberOfServices
+
+    def getNumberOfServices(self):
+        return self.__numberOfServices
+from enum import Enum
+
+class Gender(Enum):
+    Female=1
+    Male=2
+class Customer:
+    def __init__(self, firstName, lastName, cellPhoneNumber, gender, dateOfBirth):
+        self.__firstName = firstName
+        self.__lastName = lastName
+        self.__cellPhoneNumber = cellPhoneNumber
+        self.__gender = gender
+        self.__dateOfBirth = dateOfBirth
+    
+    def setFirstName(self, firstName):
+        self.__firstName = firstName
+
+    def getFirstName(self):
+        return self.__firstName
+    
+    def setLastName(self, lastName):
+        self.__lastName = lastName
+
+    def getLastName(self):
+        return self.__lastName
+    
+    def set_CellPhoneNumber(self, cellPhoneNumber):
+        self.__cellPhoneNumber = cellPhoneNumber
+
+    def getCellPhoneNumber(self):
+        return self.__cellPhoneNumber
+
+    def set_gender(self, gender):
+        self.__gender = gender
+        
+    def get_gender(self):
+        return self.__gender
+    
+    def setDateOfBirth(self, dateOfBirth):
+        self.__dateOfBirth = dateOfBirth
+    
+    def getDateOfBirth(self):
+        return self.__date_of_birth
